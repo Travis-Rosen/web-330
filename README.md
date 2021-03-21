@@ -1,2 +1,4 @@
-# web-330
-Repository for assignments in Web-330
+# Web 330 Enterprise JavaScript II
+## Contributors
+* Travis Rosen
+* Richard Krasso
