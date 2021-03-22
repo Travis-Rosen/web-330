@@ -1,0 +1,115 @@
+/**
+Title: Site.css
+Author: Travis Rosen
+Date: 3/21/2021
+Description: Styling for the index.html file. 
+*/
+
+/**
+Font-family style for the html pages. 
+*/
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+/**
+Adds margin styling to the container id.
+*/
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/**
+Adds cursor styling when hovering on light/dark mode icon.
+*/
+#icon-mode:hover {
+    cursor: pointer;
+}
+/**
+Adds padding to the text of the icon.
+*/
+#icon-text {
+    padding-left: 10px;
+}
+
+.pull-right {
+    float: right;
+}
+/**
+Adds padding for the assign-container class.
+*/
+.assign-container {
+    padding: 10px;
+}
+/**
+Adds margin and width styling to the assign-content class. 
+*/
+.assign-content {
+    width: 600px;
+    margin: 3% auto 0;
+}
+/**
+Adds alignment and font size to class. 
+*/
+.assign-results-text {
+    text-align: center;
+    font-size: 28px;
+}
+/**
+Adds text and font size to class. 
+*/
+.app-header {
+    text-align: center;
+    font-size: 28px;
+}
+/**
+Adds width and margin styling to results-container id. 
+*/
+#results-container {
+    width: 600px;
+    margin: 3% auto 0;
+}
+/**
+Adds width styling.
+*/
+.full-width {
+    width: 100%;
+}
+/**
+Adds grid styling to form class. 
+*/
+.form {
+    display: inline-grid;
+    grid-template-columns: auto;
+}
+/**
+Adds padding to form-field class. 
+*/
+.form-field {
+    padding: 20px;
+}
+/**
+Adds color and removes underline from return link. 
+*/
+.return-home {
+    color: #4f3674;
+    text-decoration: none;
+}
+/**
+Adds color and background color to return link when hovering. 
+*/
+.return-home:hover {
+    color: #4f3674;
+    background-color: #d6a800;
+}
+/**
+Adds color to return link after user has already used the link. 
+*/
+.return-home:visited {
+    color: #3c275a;
+}
+/**
+
+*/
+
+
