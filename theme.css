@@ -26,6 +26,11 @@ body.light-theme {
     --btn-hover-background-color: #d6a800;
     --btn-hover-color: #4f3674;
     --input-border-color: #ccc
+    --table-header-background-color:#4f3674;
+    --table-header-color: #fff;
+    --table-border-color: #ddd;
+    --table-hover-background-color: #d6a800;
+    --table-hover-color: #4f3674;
 }
 /**
 CSS dark-theme styling.
@@ -48,6 +53,11 @@ body.dark-theme {
     --btn-hover-background-color: #7d4787;
     --btn-hover-color: #fff;
     --input-border-color: #303030;
+    --table-header-background-color:#D176E1;
+    --table-header-color: #fff;
+    --table-border-color: #303030;
+    --table-hover-background-color: #7d4787;
+    --table-hover-color: #fff;
 
 }
 /**
@@ -170,4 +180,31 @@ Adds styling to input class.
     border: 1px solid var(--input-border-color);
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: var(--heading-background-color);
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: var(--table-header-color);
+    background-color: var(--table-header-background-color);
+}
+
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	border-color: var(--table-border-color);
+}
+
+tr:hover {
+    background-color: var(--table-hover-background-color);
+    color: var(--table-hover-color);
+    cursor: pointer;
 }

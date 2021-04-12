@@ -1,0 +1,118 @@
+<!--
+    Title: rosen-calorie.html
+    Author: Travis Rosen
+    Date: 4/10/2021
+    Description: HTML page for the calorie app.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head section includes meta tags, links to CSS pages, google fonts, and title.-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="../site.css" rel="stylesheet">
+        <link href="../theme.css" rel="stylesheet">
+        <link href="rosen-calorie.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Web 330 - Enterprise JavaScript II</title>
+
+    </head>
+    <body class="light-theme">
+        <div class="container">
+            <h1 class="app-header">Welcome To the Calorie App!</h1>
+            <div class="assign-content">
+                <div class="card">
+                    <div class="card-title">Calorie Search Form</div>
+                    <div class="card-content">
+                        <div class="form">
+                            <div class="form-field">
+                                <label for="foodItem">Enter a food item:</label>
+                                <input type="text" class="input" id="txtFoodItem">
+                                <span id="foodList"></span>
+                            </div>
+                            <div class="form-field">
+                                <button class="btn btn-primary full-width" id="btnSearch">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <a class="return-home" href="../index.html">Return</a>
+
+            <div class="assign-content">
+                <div class="card">
+                    <div class="card-title">Search Results</div>
+                    <div class="card-content">
+                        <table>
+                            <thead>
+                                <th>Name</th>
+                                <th>Calories</th>
+                            </thead>
+                            <tbody id="searchResults">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="application/javascript" src="../theme.js"></script>
+        <script type="module">
+            import { CalorieConverter } from "./calorie-converter.js";
+
+            let txtFoodItemEl = document.getElementById("txtFoodItem");
+
+            document.getElementById("btnSearch").onclick = function()
+            {
+                let txtFoodItem = txtFoodItemEl.value;
+                let foods = CalorieConverter.find(txtFoodItem)
+
+                let tableData = '';
+
+                for (let food of foods)
+                {
+                    let tableRow = `
+                    <tr>
+                        <td>${food.name}</td>
+                        <td>${food.calories}</td>
+                    </tr>`
+                    tableData += tableRow;
+                }
+
+                tableData += "</tbody></table>";
+                document.getElementById("searchResults").innerHTML = tableData;
+            }
+
+            document.addEventListener("keyup", function(event)
+            {
+                
+                if (event.key == "Enter")
+                {
+                    document.getElementById("btnSearch").click();
+                }
+            });
+
+          
+            let foodList = CalorieConverter.data;
+
+            
+            let foodListData = "<i>(Ex: ";
+            
+            
+            for (let food of foodList)
+            {
+                foodListData += `${food.name}, `;
+            }
+
+            
+            foodListData = `${foodListData.slice(0,-2)})</i>`;
+
+           
+            document.getElementById("foodList").innerHTML = foodListData;
+
+          
+        </script>
+    </body>
+</html>
