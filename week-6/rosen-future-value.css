@@ -1,0 +1,24 @@
+/**
+Title: Rosen-Future-Value.css
+Author: Travis Rosen
+Date: 4/25/2021
+Description: Styling for rosen-future-value.html
+*/
+
+/*
+Styling for danger text.
+*/
+.danger {
+    float: right;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+/*
+Styling for form labeling.
+*/
+.form-label {
+    display: inline-block;
+    padding-top: 1rem;
+}
+
