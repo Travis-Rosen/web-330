@@ -266,6 +266,10 @@ styling for the social class in footer.
     text-align: center;
 }
 
+.about-p {
+    color: #66fcf1;
+}
+
 .about {
     width: 800px;
     height: auto;
@@ -309,14 +313,14 @@ styling for the social class in footer.
 
 .about .about-right {
     width: 520px;
-    background: #fff;
+    background: #1F2833;
     padding: 25px;
     border: solid #0b0c10;
     box-shadow: 5px 10px #45a29e;
 }
 
 .about .about-right .bold {
-    color: #45a29e;
+    color: #66fcf1;
 }
 
 
