@@ -1,0 +1,553 @@
+/*
+Name: Site.css
+Author: Travis Rosen
+Description: Styling for portfolio website
+Date: 5/9/2021
+*/
+
+/*
+--General Styling for web page.--
+*/
+
+/*
+Styling for all elements.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+/*
+Html height percent.
+*/
+html {
+    height: 100%;
+}
+/*
+Styling for body of web page.
+*/
+body {
+    background-image: linear-gradient(to right, #0b0c10, #1F2833);
+    min-height: 100vh;
+  
+}
+/*
+Color and font for h1 elements.
+*/
+h1 {
+    color: #66fcf1;
+    font-family: "Titillium Web";
+}
+/*
+Font for general paragraph elements.
+*/
+p {
+    font-family: "Titillium Web";
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.semi-bold {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*
+--Start of Navbar styling--
+*/
+
+/*
+Background color for navbar.
+*/
+.navbar {
+    background-color: #66fcf1;
+    
+}
+/*
+Navbar styling for list items
+*/
+.navbar li {
+    display: inline-block;
+    padding-right: 70px;
+    padding-left: 70px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Titillium Web";
+    color: #0b0c10;
+}
+
+/*
+--Start of styling for cards used--
+*/
+
+/*
+General styling for card class. 
+*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 600px;
+    margin: 3% auto 0;
+    background-color: #66fcf1;
+}
+/*
+Styling for card title.
+*/
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+/*
+Styling for the card content.
+*/
+.card-content {
+    padding: 2px 16px;
+}
+
+
+
+/*
+--Start of styling for footer.--
+*/
+
+/*
+General styling for footer element. 
+*/
+footer {
+    position: sticky;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #66fcf1;
+    height: auto;
+    width: 100vw;
+    font-family: "Titillium Web";
+    padding-top: 10px;
+    color: black;
+    max-height: 100vh;
+
+}
+/*
+Position styling for footer content class.
+*/
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/*
+Styling for h3 element within footer content.
+*/
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+/*
+Styling for paragraph element within footer content. 
+*/
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+/*
+styling for the social class in footer. 
+*/
+.socials {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+
+.socials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover {
+    color:wheat;
+}
+
+.footer-bottom {
+    background: #1F2833;
+    color: #66fcf1;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.content-main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #66fcf1;
+    text-transform: capitalize;
+}
+
+.content-main h3 {
+    font-weight: 300;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+
+}
+
+.content-main h1 {
+    font-size: 4.4.em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+.content-main .main-btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #66fcf1;
+    font-size: 1.1em;
+    border: 2px solid #66fcf1;
+    text-transform: uppercase;
+    transition: opacity .3s ease;
+}
+
+.content-main .main-btn:hover{
+    opacity: 0.5;
+}
+
+/*
+--Start of styling for about page.--
+*/
+
+.about-body {
+    font-family: 'Montserrat' sans-serif;
+    background-image: linear-gradient(to right, #0b0c10, #1F2833);
+    font-size: 14px;
+    line-height: 22px;
+    color: #1F2833;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.about .about-left {
+    width: 200px;
+    background: #66fcf1;
+    border: solid #0b0c10;
+    box-shadow: 5px 10px #45a29e;
+    
+}
+
+.about .about-left .about-pic {
+    width: 100%;
+    height: 280px;
+}
+
+.about .about-left .about-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.about .about-left .about-content {
+    padding: 0 20px;
+}
+
+.about .title {
+    margin-bottom: 20px;
+}
+
+.about .about-left .bold {
+    color: #1F2833;
+}
+
+.about .about-left .regular {
+    color: #1F2833;
+}
+
+.about .about-right {
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+    border: solid #0b0c10;
+    box-shadow: 5px 10px #45a29e;
+}
+
+.about .about-right .bold {
+    color: #45a29e;
+}
+
+
+
+/*
+--Start of resume.html styling--
+*/
+.resume-body {
+    font-family: 'Montserrat' sans-serif;
+    background-image: linear-gradient(to right, #0b0c10, #1F2833);
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+
+
+.resume {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.resume .resume-left {
+    width: 300px;
+    background: #45a29e
+}
+
+.resume .resume-left .resume-profile {
+    width: 100%;
+    height: 280px;
+}
+
+.resume .resume-left .resume-profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.resume .resume-left .resume-content {
+    padding: 0 20px;
+}
+
+.resume .title {
+    margin-bottom: 20px;
+}
+
+.resume .resume-left .bold {
+    color: #fff;
+}
+
+.resume .resume-left .regular {
+    color: #b1eaff;
+}
+
+.resume .resume-item {
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume-left .resume-item:last-child {
+    border-bottom: 0px;
+}
+
+.resume .resume-left ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.resume .resume-left ul li:last-child {
+    margin-bottom: 0;
+}
+
+.resume .resume-left ul li .icon {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #45a29e;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+
+}
+
+.resume .icon i,
+.resume .resume-right .resume-other ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume .resume-left ul li .data {
+    color: #1F2833;
+}
+
+.resume .resume-left .resume-skills ul li {
+    color: #1F2833;
+    justify-content: space-between;
+}
+
+.resume .resume-left .resume-skills ul li .skill-name {
+    width: 25%;
+
+}
+
+.resume .resume-left .resume-skills ul li .skill-bar {
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background:#1F2833;
+    position: relative;
+}
+
+.resume .resume-left .resume-skills ul li .skill-percent {
+    width: 15%;
+}
+
+.resume .resume-left .resume-skills ul li .skill-bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+
+.resume .resume-right {
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+}
+
+.resume .resume-right .bold {
+    color: #45a29e;
+}
+
+.resume .resume-right .resume-work ul, 
+.resume .resume-right .resume-education ul {
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.resume .resume-right ul li {
+    position: relative;
+}
+
+.resume .resume-right ul li .date {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume .resume-right ul li .info {
+    margin-bottom: 20px;
+}
+
+.resume .resume-right ul li:last-child .info {
+    margin-bottom: 0;
+}
+
+.resume .resume-right .resume-work ul li::before, 
+.resume .resume-right .resume-education ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #45a29e;
+}
+
+.resume .resume-right .resume-work ul li::after, 
+.resume .resume-right .resume-education ul li::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -22px;
+    width: 2px;
+    height: 115px;
+    background: #45a29e;
+}
+
+.resume .resume-right .resume-other ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .resume-right .resume-other ul li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #45a29e;
+    border-radius: 50%;
+    position: relative;
+    color: #45a29e;
+}
+
+.resume .resume-right .resume-other ul li i {
+    font-size: 30px;
+}
+
+.resume .resume-right .resume-other ul li:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -39px;
+    width: 39px;
+    height: 2px;
+    background: #45a29e;
+}
+
+.resume .resume-right .resume-other p {
+    padding-left: 40px;
+}
+
+.resume .resume-right .resume-other ul li:last-child::before{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
