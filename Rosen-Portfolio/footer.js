@@ -1,3 +1,4 @@
+//JavaScript that will extend onto html page and display the footer listed below.
 class Footer extends HTMLElement 
 {
     constructor()
@@ -12,7 +13,7 @@ class Footer extends HTMLElement
         <footer>
             <div class="footer-content">
                 <h3>Travis Rosen</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Below you can find links to my personal GitHub, Bellevue University GitHub, Bellevue Youtube, and Web Development @ Bellevue University.</p>
                 <ul class="socials">
                     <li><a href="https://github.com/Travis-Rosen?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://github.com/buwebdev/web-330" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -21,6 +22,7 @@ class Footer extends HTMLElement
                 </ul>
             </div>
             <div class="footer-bottom">
+                <p><a href="#">Return to top<a></p>
                 <p>Copyright &copy;2021 Travis Rosen - Bellevue University</p>
             </div>
         </footer>

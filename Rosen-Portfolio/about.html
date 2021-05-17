@@ -1,9 +1,18 @@
+<!--
+Author: Travis Rosen
+Name: About.html
+Date: 5/16/2021
+Description: About page with scrolling timelines.
+*Scrolling timeline used from open source code from: https://codepen.io/tutsplus/pen/QNeJgR*
+-->
 <!DOCTYPE html>
 <html lang="en-us">
+    <!--Header for link, scripts, and meta.-->
     <head>
         <meta charset="UTF-8">
 
-        <title>Travis Rosen's Personal Portfolio Prototype</title>
+        <title>Travis Rosen's Personal Portfolio Prototype</title
+            
         
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,51 +23,105 @@
         <script src="footer.js"></script>
         <script src="https://kit.fontawesome.com/114d661ecd.js" crossorigin="anonymous"></script>
     </head>
-    <body class="about-body">
+    <body id="top">
         <header-component></header-component>
-        <br>
-        <br>
-        <div class="container">
-            <h1 class="about-title">So, Who is this Travis Rosen?</h1>
-            <hr><br>
-            <div class="about">
-                <div class="about-left">
-                    <div class="about-pic">
-                        <img src="images/rosen-soccer.jpg" alt="Soccer Picture">
-                    </div>
-                    <br>
-                    <div class="about-content">
-                        <div class="about-item">
-                            <div class="title">
-                                <p class="bold">Bio</p>
-                            </div>
-                            <p class="semi-bold">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga voluptas, id, temporibus praesentium nam nemo et accusantium rem iure tempora architecto harum eos asperiores corporis culpa quos molestiae assumenda!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-right">
-                    <div class="about-content">
-                        <div class="about-item about-info">
-                            <div class="title">
-                                <p class="bold">Facts about me!</p>
-                                <hr>
-                            </div>
-                            <p class="semi-bold about-p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga voluptas, id, temporibus praesentium nam nemo et accusantium rem iure tempora architecto harum eos asperiores corporis culpa quos molestiae assumenda!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                
+        <!--Content for About page-->
+        <div class="about-container">
+            <h1>Travis Rosen</h1>\
+            <h2>Aspiring Web-Developer</h2>
+            <hr>
+            <br>
+            <div class="image">
+                <img src="images/rosen-soccer.jpg" alt="profile-photo" class="about-img">
             </div>
-        
-        
-
+            <br>
+            <p>Hello! Welcome to my personal portfolio. As you already know, my name is Travis Rosen. Currently, I am 23 years of age studying to become a web developer at Bellevue University. How did I get here? Well, that my friend is a story and a half. I would say the best starting point would be in my final year of high-school.  </p>
+            <br> 
+        </div>
+        <div class="timeline-container">
+            <h2>Scroll To See My Journey! <br> &darr;</h2>
+            <br>
+        </div>
+        <!--Timeline section-->
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div>
+                        <time>2015</time> At this time, my entire life centered around soccer. I was a senior in highschool who had committed to play at Xavier University, a top NCAA Division I program. It was exhilarating that I was following my dreams to play at the highest levels. 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2016</time> I completed a year with Xavier University, but ultimately those dreams quickly fizzled out of my grasp. It felt that the competition was too out of reach for me, and mentally I gave up. It was devastating to watch my dreams slowly dissipate.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2017</time> That following year, I transferred to Texas A&M University to study Sports Management. I was still emotionally void of motivation because it felt as if everything I had built towards growing up was swept out from my feet. In hindsight, I had no interest in Sports Management and I chose it as an easy way out. 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2017-2018</time> During this time, I found happiness in friends and family, but still lacked motivation to better my future. I continued to go through the motions, just following the unwanted path I had chosen. I persuaded myself that eventually I would enjoy what I was studying and find that powerful motivation and work ethic I used to live by. 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2019</time> This was the year where everything changed for me. With the help of my fantastic partner I had met, I gained the strength to look into the mirror and realize I was the one choosing to push down the old version of myself. Just because one dream was lost, does not mean I cannot sculpt new ones with my own hands. So that is exactly what I did. I left A&M that very day, and built a plan to build the future I wanted. 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2020</time> I had little experience with web development, but for some reason I was extremely drawn to it. For a few months I played around with free coding classes and watched videos, and even though it was at an extremely simple scale, I thoroughly enjoyed it. A familiar burning passion began to ignite, and I wanted to compete again. Only this time, it would be different. I wanted to become a fantastic web developer and create things my way. I would not allow myself to give up this time around, regardless of the difficulties I would face. 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2021-Present</time> I decided to take the route of gaining a web development degree. While I was making steady progress through self-teaching, I wanted to further my education at a higher scale. While I still consider myself a small cub amongst the bears of the development community, I have so much confidence in my future. I am furthering my education and understanding of web development at an extremely fast pace. With the combination of my ever growing knowledge, my relentless work-ethic, my inexhaustible passion, and my refined motivation, I am creating a titan of the Web Development Industry.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Button to resume page.-->
+        <div class="about-button">
+            <a href="resume.html" class="main-btn">View My Resume</a>
         </div>
         <br><br>
+       
+        
         <footer-component></footer-component>
+        <script>
+            //Function for animated timeline.
+            (function () {
+                "use strict";
+                //Defining items variable
+                var items = document.querySelectorAll(".timeline li");
+                
+                function isElementInViewport(el) {
+                    var rect = el.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <=
+                        (window.innerHeight || 
+                        document.documentElement.clientHeight) && 
+                        rect.right <= (window.innerWidth ||
+                        document.documentElement.clientWidth)
+                    );
+                }
+
+                function callbackFunc () {
+                    for (var i = 0; i < items.length; i++) {
+                        if (isElementInViewport(items[i])) {
+                            items[i].classList.add("in-view");
+                        }
+                    }
+                }
+
+                window.addEventListener("load", callbackFunc);
+                window.addEventListener("resize", callbackFunc);
+                window.addEventListener("scroll", callbackFunc);
+            })();
+        </script>
     </body>
 </html>
