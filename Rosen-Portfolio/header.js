@@ -16,7 +16,7 @@ class Header extends HTMLElement
                 <a href="projects.html" class="nav-link">Projects</a>
                 <a href="api.html" class="nav-link">API Tests</a>
                 <a href="diagrams.html" class="nav-link">DataBase Diagrams</a>
-                <a href="bucket-list.html" class="nav-link">BucketList</a>
+                <a href="presentations.html" class="nav-link">Dev-Ops</a>
             </div>
         </header> `
     }
